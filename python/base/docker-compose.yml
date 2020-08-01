@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  latest:
+    build: .
+    container_name: "latest"
+    ports:
+      - 8888:8888
+    volumes:
+      - ./:/home/
+    tty: true
