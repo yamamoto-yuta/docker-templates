@@ -4,6 +4,8 @@ services:
   latest:
     build: .
     container_name: "latest"
+    environment:
+      TZ: Asia/Tokyo
     ports:
       - 8888:8888
     volumes:
