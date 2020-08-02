@@ -15,10 +15,7 @@ $ docker exec -it <CONTAINER_ID> bash
 ### base
 Simple python images
 
-Environment:
-| environment | version |
-| -- | -- |
-| Python | 3.7.8 |
+Python Version: 3.7.8
 
 Work Dir: `/home`
 
@@ -31,11 +28,10 @@ Installed Commands:
 #### jl-base
 Simple jupyter lab image.
 
-Environment:
-| environment | version |
-| -- | -- |
-| Python | 3.7.8 |
-| Jupyter Lab | . |
+Python Version: 3.7.8
+
+Libraries:
+- jupyterlab
 
 Work Dir: `/home`
 
@@ -46,11 +42,15 @@ Installed Commands:
 #### jl-extensions
 Jupyter lab with extensions image.
 
-Environment:
-| environment | version |
-| -- | -- |
-| Python | 3.7.8 |
-| Jupyter Lab | . |
+Python Version: 3.7.8
+
+Libraries:
+- Jupyter Lab
+
+JupyterLab-Extensions:
+- @jupyter-widgets/jupyterlab-manager
+
+@jupyter-widgets/jupyterlab-manager
 
 Work Dir: `/home`
 
