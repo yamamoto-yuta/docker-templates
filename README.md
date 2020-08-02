@@ -2,10 +2,19 @@
 Templates for Docker
 
 # Usage
+
+## Build
+
 Build image from docker-compose.
 ```
 $ docker-compose up -d --build
 $ docker exec -it <CONTAINER_ID> bash
+```
+
+## Download
+Download templates by using 'svn'.
+```
+$ svn export https://github.com/yamamoto-yuta/docker-templates/trunk/<DIRECTORY_PATH>
 ```
 
 # Templates
