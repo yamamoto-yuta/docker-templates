@@ -1,0 +1,5 @@
+FROM python:3.7
+
+ENV HOME /home
+WORKDIR $HOME
+
