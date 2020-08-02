@@ -27,7 +27,7 @@ Installed Commands:
 
 ### jupyter-lab
 
-#### base
+#### jl-base
 Environment:
 | environment | version |
 | -- | -- |
@@ -40,7 +40,7 @@ Installed Commands:
 - git
 - vim
 
-#### extensions
+#### jl-extensions
 
 
 
