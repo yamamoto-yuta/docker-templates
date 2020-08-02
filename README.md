@@ -26,3 +26,21 @@ Installed Commands:
 - vim
 
 ### jupyter-lab
+
+#### base
+Environment:
+| environment | version |
+| -- | -- |
+| Python | 3.7.8 |
+| Jupyter Lab | . |
+
+Work Dir: `/home`
+
+Installed Commands:
+- git
+- vim
+
+#### extensions
+
+
+
