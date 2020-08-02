@@ -1,2 +1,9 @@
 *.bash_history
 *.python_history
+
+
+.ipynb_checkpoints/
+.ipython/
+.jupyter/
+.local/
+
