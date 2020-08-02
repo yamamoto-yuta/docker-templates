@@ -45,12 +45,33 @@ Jupyter lab with extensions image.
 Python Version: 3.7.8
 
 Libraries:
-- Jupyter Lab
+- jupyterlab
 
 JupyterLab-Extensions:
 - @jupyter-widgets/jupyterlab-manager
 
-@jupyter-widgets/jupyterlab-manager
+Work Dir: `/home`
+
+Installed Commands:
+- git
+- vim
+
+
+#### jl-custom
+Customized Jupyter lab with extensions image.
+
+Python Version: 3.7.8
+
+Libraries:
+- jupyterlab
+- numpy
+- pandas
+- tqdm
+
+JupyterLab-Extensions:
+- @jupyter-widgets/jupyterlab-manager
+- @lckr/jupyterlab_variableinspector
+- @jupyterlab/toc
 
 Work Dir: `/home`
 
