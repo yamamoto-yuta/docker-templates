@@ -3,23 +3,30 @@ Templates for Docker
 
 # Usage
 
-## Build
-
-Build image from docker-compose.
-```
-$ docker-compose up -d --build
-$ docker exec -it <CONTAINER_ID> bash
-```
-
 ## Download
+
 Download templates by using 'svn'.
 ```
 $ svn export https://github.com/yamamoto-yuta/docker-templates/trunk/<DIRECTORY_PATH>
 ```
 
+## Build
+
+Build image from docker-compose.
+```
+$ docker-compose up -d --build
+```
+
+The way to use container is different for each templates.
+
 # Templates
 
 ## python
+
+Usage:
+```
+$ docker exec -it <CONTAINER_ID> bash
+```
 
 ### base
 Simple python images
@@ -87,4 +94,14 @@ Work Dir: `/home`
 Installed Commands:
 - git
 - vim
+
+
+## R
+Usage:
+- Access to `https:localhost:<PORT_NUM(8787)>`
+
+### base
+Simple R Image.
+
+Work Dir: `/home/rstudio/workspace`
 
