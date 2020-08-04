@@ -3,6 +3,7 @@ version: '3'
 services:
   latest:
     build: .
+    image: jupyter-lab/jl-custom
     container_name: "latest"
     environment:
       TZ: Asia/Tokyo

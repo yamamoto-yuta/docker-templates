@@ -21,88 +21,29 @@ The way to use container is different for each templates.
 
 # Templates
 
-## python
-
+## Python
 Usage:
 ```
 $ docker exec -it <CONTAINER_ID> bash
 ```
 
-### base
-Simple python images
-
-Python Version: 3.7.8
-
-Work Dir: `/home`
-
-Installed Commands:
-- git
-- vim
-
-### jupyter-lab
-
-#### jl-base
-Simple jupyter lab image.
-
-Python Version: 3.7.8
-
-Libraries:
-- jupyterlab
-
-Work Dir: `/home`
-
-Installed Commands:
-- git
-- vim
-
-#### jl-extensions
-Jupyter lab with extensions image.
-
-Python Version: 3.7.8
-
-Libraries:
-- jupyterlab
-
-JupyterLab-Extensions:
-- @jupyter-widgets/jupyterlab-manager
-
-Work Dir: `/home`
-
-Installed Commands:
-- git
-- vim
-
-
-#### jl-custom
-Customized Jupyter lab with extensions image.
-
-Python Version: 3.7.8
-
-Libraries:
-- jupyterlab
-- numpy
-- pandas
-- tqdm
-
-JupyterLab-Extensions:
-- @jupyter-widgets/jupyterlab-manager
-- @lckr/jupyterlab_variableinspector
-- @jupyterlab/toc
-
-Work Dir: `/home`
-
-Installed Commands:
-- git
-- vim
+Image list:
+| Image name | Python Ver. | Work Dir. | Commands | Libraries | Extensions |
+| -- | -- | -- | -- | -- | -- |
+| python/base | 3.7.8 | `/home` | git <br> vim | | |
+| jupyter-lab/jl-base | 3.7.8 | `/home` | git <br> vim | jupyterlab | |
+| jupyter-lab/jl-extensions | 3.7.8 | `/home` | git <br> vim | jupyterlab | |
+| jupyter-lab/jl-custom | 3.7.8 | `/home` | git <br> vim | jupyterlab <br> numpy <br> pandas <br> tqdm | @jupyter-widgets/jupyterlab-manager <br> @lckr/jupyterlab_variableinspector <br> @jupyterlab/toc |
 
 ## R
 Usage:
-- Access to `https:localhost:<PORT_NUM(8787)>`
+1. Access to `https:localhost:<PORT_NUM(8787)>`
+2. Input username(`rstudio`) and password(`pass`)
 
-### base
-Simple R Image.
-
-Work Dir: `/home/rstudio/workspace`
+Image list:
+| Image name | Work Dir. |
+| -- | -- |
+| r/base | `/home/rstudio/workspace` |
 
 ## Ubuntu
 Usage:
@@ -110,14 +51,7 @@ Usage:
 $ docker exec -it <CONTAINER_ID> bash
 ```
 
-### base
-Simple Ubuntu image.
-
-Ubuntu Version: 20.04
-
-Work Dir: `/home`
-
-Installed Commands:
-- git
-- vim
-
+Image list:
+| Image name | Ubuntu Ver. | Work Dir. | Installed Commands |
+| -- | -- | -- | -- |
+| ubuntu/base | 20.04 | `/home` | git, vim

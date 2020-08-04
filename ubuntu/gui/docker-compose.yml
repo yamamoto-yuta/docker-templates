@@ -1,14 +1,11 @@
-version: '3'
+version: '3.7'
 
 services:
   latest:
     build: .
-    image: jupyter-lab/jl-extensions
     container_name: "latest"
     environment:
       TZ: Asia/Tokyo
-    ports:
-      - 8888:8888
     volumes:
       - ./:/home/
     tty: true
