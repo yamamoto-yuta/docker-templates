@@ -95,7 +95,6 @@ Installed Commands:
 - git
 - vim
 
-
 ## R
 Usage:
 - Access to `https:localhost:<PORT_NUM(8787)>`
@@ -104,4 +103,21 @@ Usage:
 Simple R Image.
 
 Work Dir: `/home/rstudio/workspace`
+
+## Ubuntu
+Usage:
+```
+$ docker exec -it <CONTAINER_ID> bash
+```
+
+### base
+Simple Ubuntu image.
+
+Ubuntu Version: 20.04
+
+Work Dir: `/home`
+
+Installed Commands:
+- git
+- vim
 
