@@ -41,9 +41,10 @@ Usage:
 2. Input username(`rstudio`) and password(`pass`)
 
 Image list:
-| Image name | Work Dir. |
-| -- | -- |
-| r/base | `/home/rstudio/workspace` |
+| Image name | Work Dir. | Packages |
+| -- | -- | -- |
+| r/base | `/home/rstudio/workspace` | |
+| r/ts | `/home/rstudio/workspace` | xts <br> forecast <br> urca <br> tseries <br> ggplot2 <br> ggfortify |
 
 ## Ubuntu
 Usage:

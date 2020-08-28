@@ -3,9 +3,13 @@ version: '3.7'
 services:
   latest:
     build: .
+    image: ubuntu/gui
     container_name: "latest"
     environment:
-      TZ: Asia/Tokyo
+      - USER=yama07
+      - PASSWD=mypasswd
+    ports:
+      - 3389:3389
     volumes:
       - ./:/home/
     tty: true

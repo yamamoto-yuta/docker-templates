@@ -1,6 +1,6 @@
 # NOW EDITING...
 
-FROM lxde_xrdp:ubuntu18.04_ja
+FROM yama07/docker-ubuntu-lxde:ubuntu18.04_ja
 
 #ENV HOME /home
 #WORKDIR $HOME/
