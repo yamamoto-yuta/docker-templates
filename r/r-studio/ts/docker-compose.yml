@@ -3,7 +3,7 @@ version: "3.7"
 services:
   latest:
     build: .
-    image: r/ts
+    image: r-studio/ts
     container_name : "latest"
     ports:
       - 8787:8787
