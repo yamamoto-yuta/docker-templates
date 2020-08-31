@@ -3,8 +3,8 @@ version: "3.7"
 services:
   latest:
     build: .
-    image: r-studio/ts
-    container_name : "latest"
+    image: template/r/r-studio/rs-ts
+    container_name : template_r_r-studio_rs-ts
     ports:
       - 8787:8787
     environment:
