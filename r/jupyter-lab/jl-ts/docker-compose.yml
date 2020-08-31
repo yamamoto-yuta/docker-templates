@@ -3,8 +3,8 @@ version: "3.7"
 services:
   latest:
     build: .
-    image: template/r/jupyter-lab/base
-    container_name: template_r_jupyter-lab_base
+    image: template/r/jupyter-lab/jl-ts
+    container_name: template_r_jupyter-lab_jl-ts
     ports:
       - 8888:8888
     volumes:

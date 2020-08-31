@@ -51,9 +51,15 @@ $ docker-compose up -d --build
 
 #### Jupyter Lab
 
+1. Build & up & exec
 ```
 $ docker-compose up -d --build
-$ docker-compose run <CONTAINER_NAME>
+$ docker exec -it <CONTAINER_ID> bash
+```
+
+2. Check jupyter notebook token and paste token
+```
+$ jupyter notebook list
 ```
 
 ### Image list
