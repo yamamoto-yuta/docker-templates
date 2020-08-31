@@ -3,8 +3,8 @@ version: '3'
 services:
   latest:
     build: .
-    image: python/base
-    container_name: "latest"
+    image: template/python/base
+    container_name: template_python_base
     environment:
       TZ: Asia/Tokyo
     ports:
