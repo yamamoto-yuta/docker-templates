@@ -3,7 +3,7 @@ version: "3.7"
 services:
   latest:
     build: .
-    image: r/base
+    image: r-studio/base
     container_name : "latest"
     ports:
       - 8787:8787
