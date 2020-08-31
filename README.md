@@ -26,11 +26,12 @@ $ docker exec -it <CONTAINER_ID> bash
 
 ### Image list
 
-<table>
-<tr>
-<td>a</td>
-</tr>
-</table>
+| Image name | Python Ver. | Work Dir. | Commands | Libraries | Extensions |
+|---|---|---|---|---|---|
+| base | 3.7.8 | `/home` | git , vim |  |  |
+| jupyter-lab/jl-base | 3.7.8 | `/home` | git , vim | jupyterlab |  |
+| jupyter-lab/jl-extensions | 3.7.8 | `/home` | git , vim | jupyterlab |  |
+| jupyter-lab/jl-custom | 3.7.8 | `/home` | git , vim | jupyterlab <br> numpy <br> pandas <br> tqdm | @jupyter-widgets/jupyterlab-manager <br> @lckr/jupyterlab_variableinspector <br> @jupyterlab/toc |
 
 ---
 
@@ -57,11 +58,12 @@ $ docker-compose run <CONTAINER_NAME>
 
 ### Image list
 
-| Image name        | Work Dir\.                 | Packages                                         |
-|-------------------|----------------------------|--------------------------------------------------|
-| r\-studio/base    | `/home/rstudio/workspace` |                                                  |
-| r\-studio/ts      | `/home/rstudio/workspace` | forecast, ggfortify, ggplot2, tseries, urca, xts |
-| jupyter\-lab/base | `/home/rstudio/workspace` |                                                  |
+| Image name | Work Dir. | Packages |
+|---|---|---|
+| r-studio/rs-base | `/home/rstudio/workspace` |  |
+| r-studio/rs-ts | `/home/rstudio/workspace` | xts <br> forecast <br> urca <br> tseries <br> ggplot2 <br> ggfortify |
+| jupyter-lab/jl-base | `/home/rstudio/workspace` |  |
+| jupyter-lab/jl-ts | `/home/rstudio/workspace` | xts <br> forecast <br> urca <br> tseries <br> ggplot2 <br> ggfortify |
 
 ---
 
@@ -75,6 +77,6 @@ $ docker exec -it <CONTAINER_ID> bash
 
 ### Image list
 
-| Image name | Ubuntu Ver. | Work Dir. | Installed Commands |
+| Image name | Ubuntu Ver. | Work Dir. | Commands |
 | -- | -- | -- | -- |
 | ubuntu/base | 20.04 | `/home` | git, vim
