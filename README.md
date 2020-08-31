@@ -26,13 +26,11 @@ $ docker exec -it <CONTAINER_ID> bash
 
 ### Image list
 
-| Image name                  | Python Ver\. | Work Dir\. | Commands     | Libraries                                   | Extensions                                                                                          |
-|-----------------------------|--------------|------------|--------------|---------------------------------------------|-----------------------------------------------------------------------------------------------------|
-| python/base                 | 3\.7\.8      | `/home`   | git <br> vim |                                             |                                                                                                     |
-| jupyter\-lab/jl\-base       | 3\.7\.8      | `/home`   | git <br> vim | jupyterlab                                  |                                                                                                     |
-| jupyter\-lab/jl\-extensions | 3\.7\.8      | `/home`   | git <br> vim | jupyterlab                                  |                                                                                                     |
-| jupyter\-lab/jl\-custom     | 3\.7\.8      | `/home`   | git <br> vim | jupyterlab <br> numpy <br> pandas <br> tqdm | @jupyter\-widgets/jupyterlab\-manager <br> @lckr/jupyterlab\_variableinspector <br> @jupyterlab/toc |
-|                             |              |            |              |                                             |                                                                                                     |
+<table>
+<tr>
+<td>a</td>
+</tr>
+</table>
 
 ---
 
@@ -53,7 +51,7 @@ $ docker-compose up -d --build
 #### Jupyter Lab
 
 ```
-$ docker-compose build
+$ docker-compose up -d --build
 $ docker-compose run <CONTAINER_NAME>
 ```
 
@@ -61,9 +59,9 @@ $ docker-compose run <CONTAINER_NAME>
 
 | Image name        | Work Dir\.                 | Packages                                         |
 |-------------------|----------------------------|--------------------------------------------------|
-| r\-studio/base    | \`/home/rstudio/workspace` |                                                  |
-| r\-studio/ts      | \`/home/rstudio/workspace` | forecast, ggfortify, ggplot2, tseries, urca, xts |
-| jupyter\-lab/base | \`/home/rstudio/workspace` |                                                  |
+| r\-studio/base    | `/home/rstudio/workspace` |                                                  |
+| r\-studio/ts      | `/home/rstudio/workspace` | forecast, ggfortify, ggplot2, tseries, urca, xts |
+| jupyter\-lab/base | `/home/rstudio/workspace` |                                                  |
 
 ---
 
