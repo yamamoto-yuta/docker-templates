@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  latest:
+    build: .
+    image: template/python/jupyter-lab/jl-tensorboard
+    container_name: template_python_jupyter-lab_jl-tensorboard
+    environment:
+      TZ: Asia/Tokyo
+    ports:
+      - 8888:8888 # for jupyter
+      - 6006:6006 # for tensorboard
+    volumes:
+      - ./:/home/
+    tty: true

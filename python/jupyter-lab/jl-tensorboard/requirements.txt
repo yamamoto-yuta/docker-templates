@@ -1,0 +1,8 @@
+# Editor
+jupyterlab
+
+# Libraries
+## TensorFlow
+tensorflow
+tensorboard
+
