@@ -1,0 +1,16 @@
+version: '3.7'
+
+services:
+  latest:
+    build: .
+    image: template/ubuntu/gui
+    container_name: template_ubuntu_gui
+    user: "1000:1000"
+    ports:
+      - 3389:3389
+    environment:
+      USER: yamamoto
+      PASSWD: yamamoto
+    volumes:
+      - ./:/home/yamamoto/mnt/
+
