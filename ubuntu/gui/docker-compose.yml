@@ -12,5 +12,5 @@ services:
       USER: yamamoto
       PASSWD: yamamoto
     volumes:
-      - ./:/home/yamamoto/mnt/
+      - ./:/home
 
